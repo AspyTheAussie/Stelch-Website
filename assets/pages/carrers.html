@@ -1,0 +1,147 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Roboto:100,400,700|Slabo+27px');
+    div.header.sub {
+        background: rgba(0, 0, 0, 0);
+        color: #000000;
+        width: 70%;
+        margin:auto;
+        height: 16.9%;
+        text-align: center;
+        display:table;
+    }
+    div.header.sub span.link {
+        animation: 1s ease-out 0s 1 slidefromright;
+        font-family: 'Roboto', sans-serif;
+        font-size: 14px;
+        display:table-cell;
+        border: 2px solid #8db9ff;
+        border-radius: 25px;
+        vertical-align:middle;
+        transition: 0.5s ease;
+        font-family: 'Noto Sans', sans-serif;
+    }
+    div.header.sub span.split {
+        content: ' ';
+        border-left: 1px solid grey;
+        margin: 0 5%;
+        padding: 0 3%;
+        font-size: 30px;}
+    div.header.sub span.link span.filter {
+        font-size: 10px;
+        font-weight:100;
+        display: block;
+        color: #232323;
+    }
+    div.header.sub span.link:hover {
+        background: #8db9ff;
+        color:white;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    div.header.sub span.link:hover span.filter {color:white;opacity:0.5;}
+
+    div.header.sub a:link,a:visited {
+        font-family: 'Slabo 27px', serif;
+        color: #52B3D9;
+        text-decoration: none;
+    }
+
+    div.container *{transition: 0.5s ease;}
+    div.container {
+        padding-top: 1%;
+        width: 70%;
+        margin:auto;
+        display: table;
+        text-align: center;
+        justify-content: space-between;
+        height: 76.6%;
+        background: rgba(0, 0, 0, 0);
+    }
+
+    div.container div.user_card {
+        background: #8db9ff;;
+        transition: opacity 0.5s;
+        margin: 2px 2px;
+        color: white;
+        display: inline-block;
+        width: 25%;
+    }
+    div.container div.user_card span.name {
+        margin-top: 5%;
+        font-weight: bold;
+        display: block;
+    }
+    div.container div.user_card span.position {
+        font-style: italic;
+        margin-bottom: 5%;
+
+        display: block;
+    }
+
+    .fade {opacity:0;display:none !important;}
+
+    /* ANIMATIONS */
+    @keyframes slidefromright {
+        0% {
+            transform: translateX(200%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+</style>
+
+<h1 style="width: 100%;text-align: center;margin: 2% 0;">Do you have what it takes to build the future?</h1>
+
+<div class="header sub">
+    <span class="link" onclick="team_filter('RESET');">ALL<span class="filter">Reset</span></span>
+    <span class="split"></span>
+    <span class="link" onclick="team_filter('Management');">Management<span class="filter">Filter</span></span>
+    <span class="link" onclick="team_filter('Business');">Business Development<span class="filter">Filter</span></span>
+    <span class="link" onclick="team_filter('Engineering');">Engineering<span class="filter">Filter</span></span>
+    <span class="link" onclick="team_filter('Design');">Design<span class="filter">Filter</span></span>
+    <span class="link" onclick="team_filter('Testing');">Testing<span class="filter">Filter</span></span>
+</div>
+
+<div class="container">
+    <div class="user_card">
+        <span class="name">Front-End Developer</span>
+        <span class="position">Engineering / Design</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Back-End Developer</span>
+        <span class="position">Engineering</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Front-End Designer</span>
+        <span class="position">Design</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Project Management</span>
+        <span class="position">Business / Management</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Investor Relations</span>
+        <span class="position">Business</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Social Media Operator</span>
+        <span class="position">Business</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Research And Development</span>
+        <span class="position">Engineering / Testing</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Product Quality Control</span>
+        <span class="position">Testing</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Interface Designer</span>
+        <span class="position">Design</span>
+    </div>
+    <div class="user_card">
+        <span class="name">Payroll Officer</span>
+        <span class="position">Management</span>
+    </div>
+</div>
